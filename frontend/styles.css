@@ -50,17 +50,18 @@ footer {
     text-align: center;
     padding: 10px 20px;
     width: 100%;
+    position: bottom;
+    bottom: 0;
+    left: 0;
     font-size: 14px;
     box-sizing: border-box;
-    margin-top: auto; /* Push footer to the bottom */
+    z-index: 10;
 }
 
 /* Ensure content is visible above the footer */
 main {
-    flex: 1; /* Allow main content to grow and fill the space */
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
+    flex: 1;
+    padding-bottom: 20px;
 }
 
 /* Sections */
@@ -181,8 +182,7 @@ main {
     }
 
     .section {
-        width: 100%; /* Full width on smaller screens */
-        padding: 15px; /* Reduce padding for smaller screens */
+        width: 90%;
     }
 
     header h1 {
@@ -191,15 +191,6 @@ main {
 
     footer {
         font-size: 12px;
-        padding: 10px; /* Reduce padding for smaller screens */
-    }
-
-    .button {
-        max-width: 100%; /* Full width buttons on smaller screens */
-    }
-
-    .dropdown {
-        font-size: 14px; /* Smaller font size for dropdowns */
     }
 }
 
