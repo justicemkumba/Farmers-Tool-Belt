@@ -28,7 +28,7 @@ Before running the application, ensure the following are installed on your compu
 
    - Clone the repository:
 
-     git clone <repository_url>
+     git clone https://github.com/justicemkumba/Farmers-Tool-Belt/tree/main
 
    - OR download the ZIP file and extract it to your desired location.
 
@@ -123,6 +123,7 @@ Before running the application, ensure the following are installed on your compu
      If the service is not running, right-click and select Start.
 
 3. API Errors (e.g., 500 or CORS issues):
+
    - Test the API directly via Postman or browser:
 
      http://localhost:3000/api/recommendations?district=Chitipa
