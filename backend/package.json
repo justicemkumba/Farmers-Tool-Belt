@@ -1,0 +1,13 @@
+{
+  "name": "farmers-tool-belt",
+  "version": "1.0.0",
+  "description": "A dynamic web application providing tailored agricultural recommendations for Malawian districts.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node backend/app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.2.0"
+  }
+}

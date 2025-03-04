@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Farmers Tool Belt - Tailored agricultural recommendations for Malawian districts.">
+    <meta name="keywords" content="Farmers Tool Belt, agriculture, Malawi, crop recommendations, fertilizers, suppliers">
+    <title>Farmers Tool Belt</title>
+    <link rel="stylesheet" href="styles.css">
+<link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <script>document.documentElement.classList.add("js-enabled");</script>
+    <header>
+        <div class="container">
+            <h1>Farmers Tool Belt</h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- Navigation Buttons -->
+        <div class="navigation-buttons">
+            <button id="backButton" class="nav-button hidden" aria-label="Go back">&#8592; Back</button>
+            <button id="forwardButton" class="nav-button hidden" aria-label="Go forward">Next &#8594;</button>
+        </div>
+
+        <!-- District Selection -->
+        <section id="districtSection" class="section">
+            <label for="districtSelect" class="label">Select Your District:</label>
+            <select id="districtSelect" class="dropdown" aria-label="Select your district">
+                <option value="" selected disabled>Select District</option>
+                <!-- Dynamically populate districts -->
+                <optgroup label="Northern Region">
+                    <option value="Chitipa">Chitipa</option>
+                    <option value="Karonga">Karonga</option>
+                    <option value="Rumphi">Rumphi</option>
+                    <option value="Mzimba">Mzimba</option>
+                    <option value="Nkhata Bay">Nkhata Bay</option>
+                    <option value="Likoma">Likoma</option>
+                </optgroup>
+                <optgroup label="Central Region">
+                    <option value="Kasungu">Kasungu</option>
+                    <option value="Nkhotakota">Nkhotakota</option>
+                    <option value="Ntchisi">Ntchisi</option>
+                    <option value="Dowa">Dowa</option>
+                    <option value="Mchinji">Mchinji</option>
+                    <option value="Lilongwe">Lilongwe</option>
+                    <option value="Dedza">Dedza</option>
+                    <option value="Salima">Salima</option>
+                    <option value="Ntcheu">Ntcheu</option>
+                </optgroup>
+                <optgroup label="Southern Region">
+                    <option value="Mangochi">Mangochi</option>
+                    <option value="Machinga">Machinga</option>
+                    <option value="Balaka">Balaka</option>
+                    <option value="Zomba">Zomba</option>
+                    <option value="Chiradzulu">Chiradzulu</option>
+                    <option value="Blantyre">Blantyre</option>
+                    <option value="Mwanza">Mwanza</option>
+                    <option value="Neno">Neno</option>
+                    <option value="Thyolo">Thyolo</option>
+                    <option value="Mulanje">Mulanje</option>
+                    <option value="Phalombe">Phalombe</option>
+                    <option value="Chikwawa">Chikwawa</option>
+                    <option value="Nsanje">Nsanje</option>
+                </optgroup>
+            </select>
+            <button id="getCrops" class="button">View Crop Options</button>
+        </section>
+
+        <!-- Loading Spinner -->
+        <div id="loadingSpinner" class="hidden">Loading...</div>
+
+        <!-- Crop Selection -->
+        <!-- <section id="cropSection" class="section hidden">
+            <h2>Available Crops</h2>
+            <div id="cropButtons" role="region" aria-live="polite"></div>
+        </section> -->
+
+        <section id="cropSection" class="section hidden">
+            <h2 id="cropSectionTitle">Available Crops</h2> <!-- Unique ID for crops section -->
+            <div id="cropButtons" role="region" aria-live="polite"></div>
+        </section>
+        
+        <!-- Recommendations -->
+        <section id="cropSection" class="section hidden">
+            <h2 id="cropSectionTitle">Available Crops</h2> <!-- Unique ID for crops section -->
+            <div id="cropButtons" role="region" aria-live="polite"></div>
+        </section>
+        
+        <section id="recommendationSection" class="section hidden">
+            <h2 id="recommendationTitle">Crop Recommendations</h2> <!-- Unique ID for recommendation section -->
+            <div id="varieties" class="subsection">
+                <h3>Recommended Varieties</h3>
+                <div id="varietiesContent"></div>
+            </div>
+            <div id="fertilizers" class="subsection">
+                <h3>Recommended Fertilizers</h3>
+                <div id="fertilizersContent"></div>
+            </div>
+            <div id="suppliers" class="subsection">
+                <h3>Supplier Details</h3>
+                <div id="suppliersContent"></div>
+            </div>
+        </section>
+        
+        
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Farmers Tool Belt. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <noscript>
+        <p>This application requires JavaScript to function. Please enable JavaScript in your browser.</p>
+    </noscript>
+
+    <script src="script.js"></script>
+</body>
+</html>
