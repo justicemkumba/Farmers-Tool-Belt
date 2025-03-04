@@ -1,10 +1,10 @@
 /* General Styles */
 :root {
-    --primary-color: #28a745;
-    --secondary-color: #218838;
-    --background-gradient: linear-gradient(to bottom, #f9f9f9, #eaeaea);
-    --text-color: #333;
-    --error-color: #dc3545;
+    --primary-color: #28a745; /* Primary green color */
+    --secondary-color: #218838; /* Darker green for hover states */
+    --background-gradient: linear-gradient(to bottom, #f9f9f9, #eaeaea); /* Page background gradient */
+    --text-color: #333; /* Default text color */
+    --error-color: #dc3545; /* Error message color */
 }
 
 body {
@@ -58,7 +58,7 @@ footer {
     z-index: 10;
 }
 
-/* Ensure content is visible above the footer */
+/* Main content area */
 main {
     flex: 1;
     padding-bottom: 20px;
@@ -215,7 +215,7 @@ main {
 }
 
 .nav-button {
-    background-color: #28a745; /* Green color */
+    background-color: #28a745;
     color: white;
     border: none;
     border-radius: 5px;
@@ -226,14 +226,14 @@ main {
 }
 
 .nav-button:hover {
-    background-color: #218838; /* Darker green on hover */
+    background-color: #218838;
     transform: scale(1.02);
 }
 
 .nav-button.hidden {
-    display: none; /* Hide the button */
+    display: none;
 }
 
 .nav-button.visible {
-    display: inline-block; /* Show the button */
+    display: inline-block;
 }
